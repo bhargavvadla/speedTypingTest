@@ -57,6 +57,6 @@ function checkAnswer() {
 
 }
 
-
+startTimer();
 submitBtnEl.addEventListener("click", checkAnswer);
 resetBtnEl.addEventListener("click", startTimer);
