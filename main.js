@@ -32,13 +32,13 @@ getRandomQuote();
 quoteDisplayEl.textContent = randomQuote;
 
 let setId = null;
-let seconds = 1;
+let seconds = 0;
 
 function startTimer() {
     seconds = 1;
     clearInterval(setId);
     quoteInputEl.textContent = "";
-    timerEl.textContent = "1";
+    timerEl.textContent = "0";
     setId = setInterval(function() {
         seconds += 1;
         timerEl.textContent = seconds;
