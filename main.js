@@ -37,7 +37,8 @@ let seconds = 0;
 function startTimer() {
     seconds = 1;
     clearInterval(setId);
-    quoteInputEl.textContent = "";
+    quoteInputEl.value = "";
+    resultEl.innerHTML = "";
     timerEl.textContent = "0";
     setId = setInterval(function() {
         seconds += 1;
